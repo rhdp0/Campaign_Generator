@@ -1,0 +1,99 @@
+html {
+    text-align: center; 
+    font-size: 14px;  
+    background: url('./background.jpg');
+    color: #ffffff;
+}
+
+body {
+    margin-top: 30px;
+    text-align: center;
+}
+
+body h2 {
+    background-color: rgba(160, 88, 60, 0.726);
+    margin: 15px;
+    
+    border-radius: 10px;
+}
+
+section{
+    background-color: rgba(211, 119, 83, 0.726);
+    border-radius: 15px;
+    margin: 0 auto;
+    max-width: 98%;
+}
+
+.objetivoInput, .introInput, .pdmInput, .climaxInput{
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+#objetivo, #introducoes, #viloes, #aliados, #patronos, #climax{
+    block-size: 20px;
+    padding-bottom: 10px;
+}
+
+section input, button:focus {
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+
+@media (max-width: 715px) {
+    .objetivoInput input {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 715px){
+    section {
+        max-width: none;
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+content button {
+    margin: 0 auto;
+    font-size: 19px;
+    background-color: rgba(211, 119, 83, 0.726);
+    max-width: 50%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+input {
+    color: #ffffff;
+    max-width: auto; 
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(211, 119, 83, 0.726);
+    border-style: none;
+    margin: 10px;
+}
+
+a {
+    margin: 0 auto;
+    
+}
+
+button:hover {
+    background-color: rgba(255, 137, 137, 0.322);
+
+}

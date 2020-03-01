@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <h2>Aqui você terá uma ajuda para criar uma campanha rapidamente <br> baseada em informaçõe do <br> <strong>Guia do Mestre</strong></h2>
+
+    <section class="form">
+
+        <form action="/">
+            <div class="objetivoInput">
+            <h3> IDENTIFIQUE OS OBJETIVOS DO GRUPO</h3>
+
+                <input type='button' onclick='oneRoll("objetivo", objetivoMasmorra)' value='Gerar Objetivo em Masmorra'/>
+
+                <input type='button' onclick='oneRoll("objetivo", ambienteSelvagem)' value='Gerar Objetivo em Ambiente Selvagem'/>
+
+                <input type='button' onclick='oneRoll("objetivo", outro)' value='Gerar Outro Objetivo'/>
+
+                <input type='button' onclick='limpar("objetivo")' value='Limpar'/>
+
+                <div id="objetivo" ></div>
+
+            </div><!--IDENTIFIQUE OS OBJETIVOS DO GRUPO-->
+            
+
+            <div class="pdmInput">
+            <h3> IDENTIFIQUE PDMS IMPORTANTES</h3>
+                <input type='button' onclick='oneRoll("viloes", viloes)' value='Gerar Vilão'/>
+                <input type='button' onclick='limpar("viloes")' value='Limpar'/>
+                <div id="viloes" ></div>
+
+                <input type='button' onclick='oneRoll("aliados", aliados)' value='Gerar Aliado'/>
+                <input type='button' onclick='limpar("aliados")' value='Limpar'/>
+                <div id="aliados" ></div>
+
+                <input type='button' onclick='oneRoll("patronos", patronos)' value='Gerar Patrono da Aventura'/>
+                <input type='button' onclick='limpar("patronos")' value='Limpar'/>
+                <div id="patronos" ></div>
+
+            </div><!--IDENTIFIQUE PDMS IMPORTANTES-->
+            
+            
+            <div class="introInput">
+            <h3> ENCONTRE A INTRODUÇÃO IDEAL</h3>
+
+                <input type='button' onclick='oneRoll("introducoes", introducoes)' value='Gerar Introdução'/>
+                <input type='button' onclick='limpar("introducoes")' value='Limpar'/>
+                <div id="introducoes"></div>
+
+            </div><!--ENCONTRE A INTRODUÇÃO IDEAL-->
+
+            <div class="climaxInput">
+            <h3>CLÍMAX DA AVENTURA</h3>
+
+                <input type='button' onclick='oneRoll("climax", climax)' value='Gerar Clímax da Aventura'/>
+                <input type='button' onclick='limpar("climax")' value='Limpar'/>
+
+                <div id="climax"></div>
+            </div>
+            
+        </form>
+
+    </section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
