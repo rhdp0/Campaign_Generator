@@ -154,6 +154,25 @@ function limpar(campo){
     document.getElementById(campo).innerHTML = empy
 }
 
+function pdf_function(){
+    var objetivo = document.getElementById('objetivo').innerHTML;
+    var vilao = document.getElementById('viloes').innerHTML;
+    var aliado = document.getElementById('aliados').innerHTML;
+    var patrono = document.getElementById('patronos').innerHTML;
+    var climax = document.getElementById('climax').innerHTML;
+    var introducoes = document.getElementById('introducoes').innerHTML;
+    
 
+    var janela = window.open('', '', 'width=1000,height=1000');
+
+    janela.document.write('<html><head>');
+    janela.document.write('<title>PDF</title></head>');
+    janela.document.write('<body>');
+    janela.document.write(`<b>${introducoes}</b><br>Lá o gupo deve <b>${objetivo}</b><br>O vilão da camapanha será um(a) <b>${vilao}</b><br>Como aliado o grupo terá um(a) <b>${aliado}</b><br>O patrono da missão será um(a) <b>${patrono}</b><br>E o climax se dará quando <b>${climax}</b>`);
+    janela.document.write('</body></html>');
+    janela.document.close();
+    janela.print()
+
+}
 
 
